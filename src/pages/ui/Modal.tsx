@@ -61,19 +61,11 @@ const Modal: React.FC<ModalProps> = ({
       opacity: 1,
       scale: 1,
       y: 0,
-      transition: {
-        type: 'spring',
-        stiffness: 300,
-        damping: 25,
-      },
     },
     exit: {
       opacity: 0,
       scale: 0.8,
       y: 50,
-      transition: {
-        duration: 0.2,
-      },
     },
   };
 
@@ -98,6 +90,11 @@ const Modal: React.FC<ModalProps> = ({
             initial="hidden"
             animate="visible"
             exit="exit"
+            transition={{
+              type: 'spring',
+              stiffness: 300,
+              damping: 25,
+            }}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
