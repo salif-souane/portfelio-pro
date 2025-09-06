@@ -10,25 +10,22 @@ function App() {
   return (
     
     <Router>
-      <h1 className="text-4xl text-blue-600">Hello Tailwind 🚀</h1>
-
-      <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
-        {/* Navbar fixe */}
-        <Navbar />
+        
 
         {/* Contenu principal */}
-        <main className="flex-grow container mx-auto px-4 pt-20 pb-8">
+       
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </main>
+        
 
         {/* Footer */}
         <Footer />
-      </div>
+      
     </Router>
   );
 }
