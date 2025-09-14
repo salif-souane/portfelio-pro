@@ -1,9 +1,9 @@
 {
-  "name": "portfelio",
+  "homepage": "https://salifdev.github.io/portfelio-pro/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://salifdev.github.io/portfelio-pro/",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
