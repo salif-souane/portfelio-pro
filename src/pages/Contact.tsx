@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
 
               <motion.button
                 type="submit"
-                className="w-full py-4 bg-gradient-to-r from-green-400 to-blue-400 text-white font-semibold rounded-lg flex items-center justify-center gap-3 hover:shadow-2xl hover:shadow-green-500/25 transition-all duration-300"
+                className="w-full py-4 bg-gradient-to-r text-cyan-400 text-cyan-400 text-cyan-400 font-semibold rounded-lg flex items-center justify-center gap-3 hover:shadow-2xl hover:shadow-green-500/25 transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
