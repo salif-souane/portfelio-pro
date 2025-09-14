@@ -165,14 +165,16 @@ const Home: React.FC = () => {
                 <ArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
               </motion.button>
 
-              <motion.button
+              <motion.a
+                href="public/Salif_SOUANE_CV.pdf"
+                download="Salif_SOUANE_CV.pdf"
                 className="group px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Download className="group-hover:translate-y-1 transition-transform duration-300" />
                 Télécharger CV
-              </motion.button>
+              </motion.a>
             </motion.div>
 
             {/* Social Links */}

@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router basename="/portfelio-pro"> {/* 👈 important pour GitHub Pages */}
+    <Router basename="/portfelio-pro"> {/*  important pour GitHub Pages */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
