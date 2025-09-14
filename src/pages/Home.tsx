@@ -106,7 +106,7 @@ const Home: React.FC = () => {
               className="inline-block mb-6 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 backdrop-blur-sm"
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(34, 211, 238, 0.3)" }}
             >
-              <span className="text-cyan-400 font-medium">👋 Disponible pour de nouveaux projets</span>
+              <span className="text-cyan-400 font-medium">Disponible pour de nouveaux projets</span>
             </motion.div>
 
             <motion.h1
