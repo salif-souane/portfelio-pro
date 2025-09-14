@@ -143,7 +143,7 @@ const Home: React.FC = () => {
               Développeur Web passionné spécialisé en{' '}
               <span className="text-blue-400 font-semibold">React</span>,{' '}
               <span className="text-blue-400 font-semibold">TypeScript</span> et{' '}
-              <span className="text-red-400 font-semibold">Angular</span>.
+              <span className="text-blue-400 font-semibold">Angular</span>.
               <br />
               Je transforme vos idées en expériences digitales exceptionnelles.
             </motion.p>
