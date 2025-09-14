@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfelio-pro"> {/* 👈 important pour GitHub Pages */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +18,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
