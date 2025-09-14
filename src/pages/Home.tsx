@@ -166,7 +166,7 @@ const Home: React.FC = () => {
               </motion.button>
 
               <motion.a
-                href="public/Salif_SOUANE_CV.pdf"
+                href={`${import.meta.env.BASE_URL}Salif_SOUANE_CV.pdf`}
                 download="Salif_SOUANE_CV.pdf"
                 className="group px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold text-lg flex items-center gap-3 hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
