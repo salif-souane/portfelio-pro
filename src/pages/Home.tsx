@@ -185,9 +185,9 @@ const Home: React.FC = () => {
               transition={{ delay: 2.5, duration: 0.8 }}
             >
               {[
-                { icon: Github, href: "#", color: "hover:text-white" },
-                { icon: Linkedin, href: "#", color: "hover:text-blue-400" },
-                { icon: Mail, href: "#", color: "hover:text-green-400" }
+                { icon: Github, href: "https://github.com/salif-souane", color: "hover:text-white" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/salif-souane-a09ba8228/recent-activity/all/", color: "hover:text-blue-400" },
+                { icon: Mail, href: "http://localhost:5173/portfelio-pro/contact", color: "hover:text-green-400" }
               ].map((social, index) => (
                 <motion.a
                   key={index}
