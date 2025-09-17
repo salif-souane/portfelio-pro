@@ -5,25 +5,47 @@ import { ExternalLink } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Application React/TypeScript avec paiement Stripe intégré",
-      tech: ["React", "TypeScript", "Node.js", "MongoDB"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "#"
+      title: "App Web de Fankanta",
+      description: "App React/TypeScript avec mecanisme de gestion de feedback communautaire pour Organisation DECLIC en collaboration avec un autre developer",
+      tech: ["React", "TypeScript", "Node.js", "Mariadb", "CloudFlare", "Vite", "Tailwindcss", "Crizzle", "Hostinger"],
+      image: "public/photo_projets/photo1.png",
+      link: "https://app.fankanta.org/"
     },
     {
-      title: "Dashboard Analytics",
-      description: "Interface d'administration avec visualisations de données",
-      tech: ["Angular", "D3.js", "PostgreSQL", "AWS"],
-      image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "#"
+      title: "Mon Portfolio",
+      description: "Interface portfolio moderne et responsive pour mettre en valeur mes compétences et projets",
+      tech: ["React", "TypeScript", "Tailwindcss", "GitHub Pages"],
+      image: "public/photo_projets/photo2.png",
+      link: " https://salif-souane.github.io/portfelio-pro/ "
+      
     },
     {
-      title: "Mobile App Design",
-      description: "Design system complet pour application mobile",
-      tech: ["Figma", "React Native", "TypeScript"],
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      link: "#"
+      title: "Web App Experience psychologique",
+      description: "Cette application web permet de gérer des expériences d'étiquetage d'images.Elle propose une interface d'administration (gestion des expériences, photos, participants) / Non deployer mais le code source est sur GitHub",
+      tech: ["PHP", "Mariadb"],
+      image: "public/photo_projets/photo3.png",
+      link: "https://github.com/salif-souane/image-labeling-app"
+    },
+    {
+      title: "Web App Gestion de Plainte",
+      description: "Cette application web permet de gérer des plaintes. / Non deployer mais le code source est sur GitHub",
+      tech: ["java", "Mariadb", "Spring Boot","Html", "Css", "React"],
+      image: "public/photo_projets/photo4.png",
+      link: "https://github.com/salif-souane/front-sa"
+    },
+    {
+      title: "Web App Gestion Avis ",
+      description: "Cette application web permet de gérer des avis des utilisateurs. / Non deployer mais le code source est sur GitHub",
+      tech: ["java", "Mariadb", "Spring Boot","Html", "Css", "React"],
+      image: "public/photo_projets/photo5.png",
+      link: "https://github.com/salif-souane/front-sa"
+    },
+    {
+      title: "SEN LIVRAISON Version bêta (Accès actuellement limité).",
+      description: "SEN LIVRAISON est une application web innovante spécialisée dans la livraison à travers tout le Sénégal. Développement en cours.",
+      tech: ["TypeScript", "Mariadb", "Tailwindcss", "React"],
+      image: "public/photo_projets/photo8.png",
+      link: "https://github.com/salif-souane"
     }
   ];
 
