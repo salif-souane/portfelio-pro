@@ -47,11 +47,11 @@ const Projects: React.FC = () => {
       link: "https://github.com/salif-souane"
     },
     {
-      title: "SEN LIVRAISON Version bêta (Accès actuellement limité).",
-      description: "SEN LIVRAISON est une application web innovante spécialisée dans la livraison à travers tout le Sénégal. Développement en cours.",
-      tech: ["TypeScript", "Mariadb", "Tailwindcss", "React"],
-      image: "/portfelio-pro/photo_projets/photo8.png",
-      link: "https://github.com/salif-souane"
+      title: "SITE WEB L2I-UASZ",
+      description: "ce site developpait par certains membres de ma classe, met en valeur notre filliere, la licence ingeneirie informatique.",
+      tech: ["information incomplete  "],
+      image: "/portfelio-pro/photo_projets/photo7.png",
+      link: "https://l2i-uasz.com/"
     }
   ];
 
