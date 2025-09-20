@@ -45,6 +45,13 @@ const Projects: React.FC = () => {
       tech: ["TypeScript", "Mariadb", "Tailwindcss", "React"],
       image: "/portfelio-pro/photo_projets/photo8.png",
       link: "https://github.com/salif-souane"
+    },
+    {
+      title: "SEN LIVRAISON Version bêta (Accès actuellement limité).",
+      description: "SEN LIVRAISON est une application web innovante spécialisée dans la livraison à travers tout le Sénégal. Développement en cours.",
+      tech: ["TypeScript", "Mariadb", "Tailwindcss", "React"],
+      image: "/portfelio-pro/photo_projets/photo8.png",
+      link: "https://github.com/salif-souane"
     }
   ];
 
