@@ -35,6 +35,10 @@ const AccesInterdit: React.FC = () => {
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           L'accès à cette page est interdit pour le moment.
+
+          L'application SEN LIVRAISON est actuellement en cours de développement.
+          L'accès est temporairement restreint aux membres autorisés de l'équipe.
+          Merci de votre compréhension. Restez connectés pour le lancement officiel !
         </motion.p>
       </motion.div>
     </div>

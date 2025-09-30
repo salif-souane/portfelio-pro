@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -44,7 +45,7 @@ const Projects: React.FC = () => {
       description: "SEN LIVRAISON est une application web innovante spécialisée dans la livraison à travers tout le Sénégal. Développement en cours.",
       tech: ["TypeScript", "Mariadb", "Tailwindcss", "React"],
       image: "/portfelio-pro/photo_projets/photo8.png",
-      link: "https://github.com/salif-souane"
+      link: "/accesInterdit"
     },
     {
       title: "SITE WEB L2I-UASZ",
@@ -136,15 +137,24 @@ const Projects: React.FC = () => {
                     ))}
                   </div>
 
-                  <motion.a
-                    href={project.link}
-                    className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200"
-                    whileHover={{ x: 5 }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Voir le projet <ExternalLink size={16} />
-                  </motion.a>
+                  {project.link.startsWith('/') ? (
+                    <Link
+                      to={project.link}
+                      className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200"
+                    >
+                      Voir le projet <ExternalLink size={16} />
+                    </Link>
+                  ) : (
+                    <motion.a
+                      href={project.link}
+                      className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-colors duration-200"
+                      whileHover={{ x: 5 }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le projet <ExternalLink size={16} />
+                    </motion.a>
+                  )}
                 </div>
               </motion.div>
             ))}
