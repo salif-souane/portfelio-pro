@@ -8,37 +8,37 @@ const Contact: React.FC = () => {
     e.preventDefault();
     const form = e.currentTarget;
 
-    // ⚡️ Envoi au propriétaire (toi)
+    // Envoi au propriétaire (toi)
     emailjs
       .sendForm(
-        "service_n20jgn5",   // 👉 remplace par ton service_id
-        "template_ychdg1q", // 👉 remplace par ton template_id admin
+        "service_n20jgn5",   // remplace par ton service_id
+        "template_ychdg1q", // remplace par ton template_id admin
         form,
-        "jP9kHgJ5umEUtyK5R"  // 👉 remplace par ta clé publique
+        "jP9kHgJ5umEUtyK5R"  // remplace par ta clé publique
       )
       .then(
         () => {
-          console.log("Mail envoyé à l’admin ✅");
+          console.log("Mail envoyé à l’admin ");
         },
         (error) => {
-          console.error("Erreur admin ❌", error);
+          console.error("Erreur admin ", error);
         }
       );
 
-    // ⚡️ Envoi de confirmation au visiteur
+    //  Envoi de confirmation au visiteur
     emailjs
       .sendForm(
         "service_n20jgn5",    // même service
-        "template_tpbex9b",  // 👉 remplace par ton template_id user
+        "template_tpbex9b",  //  remplace par ton template_id user
         form,
         "jP9kHgJ5umEUtyK5R"
       )
       .then(
         () => {
-          alert("Merci ! Votre message a été envoyé ✅");
+          alert("Merci ! Votre message a été envoyé");
         },
         (error) => {
-          console.error("Erreur confirmation ❌", error);
+          console.error("Erreur confirmation", error);
           alert("Une erreur est survenue, veuillez réessayer.");
         }
       );
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                   <input
                     type="email"
                     name="email"
-                    required
+                    required 
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white"
                     placeholder="votre@email.com"
                   />
