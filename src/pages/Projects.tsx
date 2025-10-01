@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Web App Gestion Avis ",
-      description: "Cette application web permet de gérer des avis des utilisateurs. / Non deployer mais le code source est sur GitHub",
+      description: "Cette application web permet de gérer des avis des utilisateurs. /Non deployer mais le code source est sur GitHub",
       tech: ["java", "Mariadb", "Spring Boot","Html", "Css", "React"],
       image: "/portfelio-pro/photo_projets/photo5.png",
       link: "https://github.com/salif-souane/front-sa"
