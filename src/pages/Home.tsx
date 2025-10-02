@@ -38,6 +38,11 @@ const Home: React.FC = () => {
   };
 
   const tagline = useTypewriter("Créateur d'expériences web immersives", 80);
+  const taglineDECLIC = useTypewriter(" DECLIC : Développement, Citoyenneté, Leadership Intégré & Communautaire ", 80);
+ const taglineL3I = useTypewriter(" L3I :  Laboratoire d’Informatique et d’Ingénierie pour l’Innovation", 80);
+ 
+ 
+
 
   // Floating tech icons data
   const techIcons = [
@@ -130,6 +135,7 @@ const Home: React.FC = () => {
                 transition={{ duration: 1, repeat: Infinity }}
                 className="ml-1"
               >
+
                 |
               </motion.span>
             </motion.div>
@@ -148,6 +154,24 @@ const Home: React.FC = () => {
               Je transforme vos idées en expériences digitales exceptionnelles.
             </motion.p>
 
+            <span className="text-cyan-400 font-medium">MES EXPERIENCES PROFESSIONNELLES <br /></span>
+
+             {taglineDECLIC}
+             <img src={`${import.meta.env.BASE_URL}photo_projets/Logo_DECLIC.jpg`} alt="DECLIC" className="inline-block w-16 h-16 ml-4" />
+              <motion.span
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+                className="ml-1"
+              ></motion.span>
+<br />
+              {taglineL3I}
+             <img src={`${import.meta.env.BASE_URL}photo_projets/logo_L3I.png`} alt="L3I" className="inline-block w-16 h-16 ml-4" />
+              <motion.span
+                animate={{ opacity: [1, 0, 1] }}
+                transition={{ duration: 1, repeat: Infinity }}
+                className="ml-1"
+              ></motion.span>
+
             {/* CTA Buttons */}
             <motion.div
               className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
@@ -161,7 +185,7 @@ const Home: React.FC = () => {
                 whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(59, 130, 246, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
               >
-                Voir mes projets
+                 Voir mes projets
                 <ArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
               </motion.button>
 
