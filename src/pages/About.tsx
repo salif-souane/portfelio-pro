@@ -113,7 +113,7 @@ const About: React.FC = () => {
               >
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/photo_projets/Logo_DECLIC.jpg"
+                    src="public/photo_projets/profil.jpg"
                     alt="Logo DECLIC"
                     className="w-full h-full object-contain"
                   />
