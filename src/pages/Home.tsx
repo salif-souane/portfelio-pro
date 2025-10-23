@@ -115,12 +115,10 @@ const Home: React.FC = () => {
             </motion.div>
 
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r text-cyan-400 text-cyan-400 text-cyan-400 bg-clip-text text-transparent"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              className="inline-block mb-6 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 backdrop-blur-sm"
+              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(34, 211, 238, 0.3)" }}
             >
-              Salif SOUANE
+              <span className="text-cyan-400 font-medium">Salif </span>
             </motion.h1>
 
             <motion.div
