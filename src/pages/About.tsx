@@ -21,8 +21,8 @@ const About: React.FC = () => {
   ];
 
   const skills = [
-    { name: "React ", level: 95, color: "from-blue-400 to-blue-600" },
-    { name: "TypeScript", level: 90, color: "from-blue-400 to-blue-600" },
+    { name: "React & TypeScript ", level: 95, color: "from-blue-400 to-blue-600" },
+    { name: "", level: 90, color: "from-blue-400 to-blue-600" },
     { name: "Node.js & Express & Vite", level: 85, color: "from-blue-400 to-blue-600" },
     { name: "Spring Boot & Java", level: 80, color: "from-blue-400 to-blue-600" },
     { name: "MariaDB & MySQL", level: 80, color: "from-blue-400 to-blue-600" },
