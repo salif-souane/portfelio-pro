@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { LogOut, Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +10,8 @@ const Navbar: React.FC = () => {
     { name: 'À propos', path: '/about' },
     { name: 'Projets', path: '/projects' },
     { name: 'Contact', path: '/contact' },
+    {name : 'Login', path : '/login' },
+    {name : 'Logout', path : '/logout' }
   ];
 
   return (
