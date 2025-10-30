@@ -10,9 +10,7 @@ const Navbar: React.FC = () => {
     { name: 'À propos', path: '/about' },
     { name: 'Projets', path: '/projects' },
     { name: 'Contact', path: '/contact' },
-    {name : 'Login', path : '/login' },
-    {name : 'Logout', path : '/logout' }
-  ];
+    ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-white/10">

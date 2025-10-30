@@ -22,7 +22,7 @@ const About: React.FC = () => {
 
   const skills = [
     { name: "React & TypeScript ", level: 95, color: "from-blue-400 to-blue-600" },
-    { name: "", level: 90, color: "from-blue-400 to-blue-600" },
+   
     { name: "Node.js & Express & Vite", level: 85, color: "from-blue-400 to-blue-600" },
     { name: "Spring Boot & Java", level: 80, color: "from-blue-400 to-blue-600" },
     { name: "MariaDB & MySQL", level: 80, color: "from-blue-400 to-blue-600" },
@@ -33,28 +33,34 @@ const About: React.FC = () => {
 
   const experiences = [
     {
-      company: "Assane Seck University of Ziguinchor",
-      logo: "/photo_projets/Logo_DECLIC.jpg",
+      company: "Projet Fankanta",
+      logo: "/portfelio-pro/photo_projets/projet_web.jpg",
       role: "Stagiaire en développement web",
-      period: "2023 - 2024",
+      period: "2024 - 2025",
       description:
-        "Conception et développement d'une application web interne pour la gestion des projets étudiants, avec React, Node.js et MariaDB.",
+        "Conception et développement et deploiement d'une application web pour la gestion des Feedbacks communautaires.",
     },
     {
-      company: "Tech Africa Solutions",
-      logo: "/photo_projets/logo_L3I.png",
-      role: "Développeur Full Stack",
-      period: "2022 - 2023",
+      company: "Update L3I Website",
+      logo: "/portfelio-pro/photo_projets/projet_web.jpg",
+      role: "Développeur",
+      period: "2024 - 2025",
       description:
-        "Participation à la mise en place d’un système de feedback citoyen pour les communes locales, avec React, Express et PostgreSQL.",
+        "Participation à la mise a jour du site web du Laboratoire d'Informatique, d'Ingenierie pour d'Innovation",
+    },
+    
+  ];
+
+  const organisations = [
+    {
+      name: "DECLIC",
+      logo: "/portfelio-pro/photo_projets/Logo_DECLIC.jpg",
+      description: "Développement, Citoyenneté, Leadership Intégré & Communautaire",
     },
     {
-      company: "Innov’Lab",
-      logo: "/logos/innovlab.png",
-      role: "UI/UX Designer & Intégrateur Frontend",
-      period: "2021 - 2022",
-      description:
-        "Création d’interfaces modernes, accessibles et optimisées pour des startups africaines. Contribution à la charte graphique et à la cohérence visuelle.",
+      name: "L3I",
+      logo: "/portfelio-pro/photo_projets/logo_L3I.png",
+      description: "Laboratoire d'Informatique, d'Ingenierie pour d'Innovation.",
     },
   ];
 
@@ -207,11 +213,47 @@ const About: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Values Section */}
+        {/* Organisations Section */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-24 max-w-5xl mx-auto"
+        >
+          <h3 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Organisations
+          </h3>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {organisations.map((org, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                className="flex flex-col items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
+              >
+                <div className="w-20 h-20 rounded-xl overflow-hidden bg-gray-800 flex items-center justify-center">
+                  <img
+                    src={org.logo}
+                    alt={org.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="text-center">
+                  <h4 className="text-xl font-bold text-white">{org.name}</h4>
+                  <p className="text-gray-300 leading-relaxed mt-2">{org.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Values Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
           className="mt-24 text-center max-w-3xl mx-auto"
         >
           <h3 className="text-2xl font-bold mb-4 text-white">Ma philosophie</h3>

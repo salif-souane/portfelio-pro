@@ -38,9 +38,7 @@ const Home: React.FC = () => {
   };
 
   const tagline = useTypewriter("Créateur d'expériences web immersives", 80);
-  const taglineDECLIC = useTypewriter(" DECLIC : Développement, Citoyenneté, Leadership Intégré & Communautaire ", 80);
- const taglineL3I = useTypewriter(" L3I :  Laboratoire d’Informatique et d’Ingénierie pour l’Innovation", 80);
- 
+  
  
 
 
@@ -114,13 +112,7 @@ const Home: React.FC = () => {
               <span className="text-cyan-400 font-medium">Disponible pour de nouveaux projets</span>
             </motion.div>
 
-            <motion.h1
-              className="inline-block mb-6 px-6 py-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(34, 211, 238, 0.3)" }}
-            >
-              <span className="text-cyan-400 font-medium">Salif </span>
-            </motion.h1>
-
+           
             <motion.div
               className="text-2xl md:text-3xl text-cyan-400 mb-8 h-12 flex items-center justify-center"
               initial={{ opacity: 0 }}
@@ -154,22 +146,7 @@ const Home: React.FC = () => {
 
             <span className="text-cyan-400 font-medium">MES EXPERIENCES PROFESSIONNELLES <br /></span>
 
-             {taglineDECLIC}
-             <img src={`${import.meta.env.BASE_URL}photo_projets/Logo_DECLIC.jpg`} alt="DECLIC" className="inline-block w-16 h-16 ml-4" />
-              <motion.span
-                animate={{ opacity: [1, 0, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-                className="ml-1"
-              ></motion.span>
-<br />
-              {taglineL3I}
-             <img src={`${import.meta.env.BASE_URL}photo_projets/logo_L3I.png`} alt="L3I" className="inline-block w-16 h-16 ml-4" />
-              <motion.span
-                animate={{ opacity: [1, 0, 1] }}
-                transition={{ duration: 1, repeat: Infinity }}
-                className="ml-1"
-              ></motion.span>
-
+          
             {/* CTA Buttons */}
             <motion.div
               className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
