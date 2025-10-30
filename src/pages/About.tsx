@@ -119,7 +119,7 @@ const About: React.FC = () => {
               >
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/portfelio-pro/photo_projets/profil.jpg"
+                    src="/portfelio-pro/photo_projets/photo_graduation.jpg"
                     alt="profil"
                     className="w-full h-full object-contain"
                   />
