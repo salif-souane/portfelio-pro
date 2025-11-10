@@ -54,12 +54,12 @@ const About: React.FC = () => {
   const organisations = [
     {
       name: "DECLIC",
-      logo: "/portfelio-pro/photo_projets/Logo_DECLIC.jpg",
+      logo: "/photo_projets/Logo_DECLIC.jpg",
       description: "Développement, Citoyenneté, Leadership Intégré & Communautaire",
     },
     {
       name: "L3I",
-      logo: "/portfelio-pro/photo_projets/logo_L3I.png",
+      logo: "/photo_projets/logo_L3I.png",
       description: "Laboratoire d'Informatique, d'Ingenierie pour d'Innovation.",
     },
   ];

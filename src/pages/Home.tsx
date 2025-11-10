@@ -112,7 +112,20 @@ const Home: React.FC = () => {
               <span className="text-cyan-400 font-medium">Disponible pour de nouveaux projets</span>
             </motion.div>
 
-           
+            {/* Profile Photo */}
+            <motion.div
+              className="mb-8"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}photo_projets/profil.jpg`}
+                alt="Salif Souane - Développeur Web"
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-cyan-400/50 shadow-2xl shadow-cyan-400/20 object-cover"
+              />
+            </motion.div>
+
             <motion.div
               className="text-2xl md:text-3xl text-cyan-400 mb-8 h-12 flex items-center justify-center"
               initial={{ opacity: 0 }}
@@ -144,8 +157,7 @@ const Home: React.FC = () => {
               Je transforme vos idées en expériences digitales exceptionnelles.
             </motion.p>
 
-            <span className="text-cyan-400 font-medium">MES EXPERIENCES PROFESSIONNELLES <br /></span>
-
+           
           
             {/* CTA Buttons */}
             <motion.div
