@@ -173,7 +173,7 @@ const Home: React.FC = () => {
             >
               <motion.button
                 onClick={() => navigate('/projects')}
-                className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold text-lg flex items-center gap-3 hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300"
+                className="group px-8 py-4 bg-gradient-to-r from-blue-500  rounded-full font-semibold text-lg flex items-center gap-3 hover:shadow-2xl hover:shadow-blue-500/25 transition-all duration-300"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(59, 130, 246, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -257,7 +257,7 @@ const Home: React.FC = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">
               À propos de moi
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -295,7 +295,7 @@ const Home: React.FC = () => {
               </p>
               <motion.button
                 onClick={() => navigate('/about')}
-                className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
+                className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -317,7 +317,7 @@ const Home: React.FC = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
               Mes Projets
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -387,7 +387,7 @@ const Home: React.FC = () => {
           >
             <motion.button
               onClick={() => navigate('/projects')}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-400 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -408,7 +408,7 @@ const Home: React.FC = () => {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r  to-blue-400 bg-clip-text text-transparent">
               Contactez-moi
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -430,7 +430,7 @@ const Home: React.FC = () => {
 
             <motion.button
               onClick={() => navigate('/contact')}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-green-400 to-blue-500 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r to-blue-500 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
