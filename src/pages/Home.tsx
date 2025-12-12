@@ -37,7 +37,7 @@ const Home: React.FC = () => {
     return displayText;
   };
 
-  const tagline = useTypewriter("SALIF SOUANE                   DEVELOPPEUR ", 80);
+  const tagline = useTypewriter("SALIF SOUANE               DEVELOPPEUR ", 80);
   
   
  
