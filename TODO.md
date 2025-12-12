@@ -1,3 +1,5 @@
-# TODO: Add Profile Photo to Home Page
-
-- [x] Edit src/pages/Home.tsx to add the profile photo above the tagline with appropriate styling and animation.
+- [x] Ajouter la section aperçu About dans Home.tsx
+- [x] Ajouter la section aperçu Projects dans Home.tsx
+- [x] Ajouter la section aperçu Contact dans Home.tsx
+- [x] Assurer le défilement fluide et les animations
+- [ ] Tester la navigation et le défilement
