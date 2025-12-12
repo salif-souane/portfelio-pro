@@ -387,7 +387,7 @@ const Home: React.FC = () => {
           >
             <motion.button
               onClick={() => navigate('/projects')}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-400 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full font-semibold text-white hover:shadow-2xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
